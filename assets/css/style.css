@@ -1,10 +1,10 @@
 body {
     font-family: "Lato", sans-serif;
-    background: linear-gradient(to right, aqua, white)
+    background: linear-gradient(to right, white, grey)
 }
 
 .sidenav {
-    margin: 
+    margin: 2em; 
     height: 100%;
     width: 0;
     position: fixed;
@@ -19,7 +19,7 @@ body {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 10px 10px 10px 32px;
     text-decoration: none;
     font-size: 25px;
     color: black;
@@ -42,4 +42,13 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.container{
+    display: grid;
+    /*justify-content: center;*/
+}
+.container #brand{
+    display: grid;
+    justify-content: center;
 }
