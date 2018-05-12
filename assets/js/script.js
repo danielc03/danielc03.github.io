@@ -6,7 +6,7 @@ function openNav() {
 
 function closeNav() {
 	document.querySelector(".container").style.opacity = "1";
-	document.querySelector("div").style.transition = "1s";
+	document.querySelector("div").style.transition = "2s";
     document.querySelector("#mySidenav").style.width = "0";
 }
 

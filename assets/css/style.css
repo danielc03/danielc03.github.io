@@ -46,9 +46,26 @@ body {
 
 .container{
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
     /*justify-content: center;*/
 }
-.container #brand{
+#brand{
+    padding: 20px;
+    box-shadow: 0px 0px 15px grey;
     display: grid;
     justify-content: center;
+    transition: 1s;
+}
+#brand:hover{
+    transform: scale(1.05);
+}
+
+#content{
+    box-shadow: 0px 0px 15px 2px white;
+    padding: 20px;
+    transition: 1s;
+}
+#content:hover{
+    transform: scale(1.05);
 }
