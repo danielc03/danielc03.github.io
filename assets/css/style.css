@@ -1,24 +1,45 @@
-body{
-	background: linear-gradient(to right, aqua,grey);
-
+body {
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(to right, aqua, white)
 }
 
-.container-fluid{
-	display: inline-block;
-/*	background: linear-gradient(to right, aqua,grey);
-*/	background: transparent;
+.sidenav {
+    margin: 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    /*opacity: 0.2;*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-}
-.row{
-}
-.logo{
-	padding: .5em;
-}
-.navbar-toggler{
-	margin: .5em;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
 }
 
-.navbar-collapse a{
-	color: #aaaccc;
-	font-weight: bold;	
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
