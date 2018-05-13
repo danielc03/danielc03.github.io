@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(to right, white, grey);
+    background: linear-gradient(to right, white, #6E92A1);
     margin: 0;
 }
 
@@ -69,6 +69,7 @@ body {
 }
 
 #content{
+    background: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
