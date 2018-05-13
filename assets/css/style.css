@@ -109,7 +109,7 @@ img {
   .sidenav a {font-size: 18px;}
   .container div{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 2em;
   }
 
