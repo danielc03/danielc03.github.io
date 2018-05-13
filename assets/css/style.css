@@ -47,37 +47,32 @@ body {
 @media screen and (max-height: 450px, max-width: 414px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  .container {padding-top: 15px;}
-  .container {font-size: 18px;}
 }
 
 .container{
     display: grid;
     grid-area: 1fr 2fr;
     grid-gap: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px;
 }
 #brand{
-    width: 100%;
     padding: 20px;
     box-shadow: 0px 0px 15px 2px grey;
     display: grid;
     justify-content: center;
-    text-align: center;
     transition: 1s;
     text-transform: uppercase;
     text-shadow: 0px 2px 2px grey;  
 }
 #brand:hover{
-    /*transform: scale(1.01);*/
+    transform: scale(1.02);
 }
 
 #content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+/*    flex-wrap: wrap;   
+    flex-direction: column;*/
     box-shadow: 0px 0px 15px 2px white;
     padding: 20px;
     transition: 1s;
@@ -86,16 +81,7 @@ body {
     transform: scale(1.02);
 }
 
-#about2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    margin: 10px;
-    background: white;
-    box-shadow: 0px 0px 15px 2px white;
-}
-
 img {
-    width:  100%;
+    width: 100%;
     height: auto;
 }
