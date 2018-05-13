@@ -24,9 +24,9 @@ const menuRestore = () => {
 }
 
 const menuHover = () => {
-	menu.style.color = "grey";
+	menu.style.color = "#A2B3CA";
 }
 
 const menuHoverOff = () => {
-	menu.style.color = "black";
+	menu.style.color = "#5A7497";
 }
