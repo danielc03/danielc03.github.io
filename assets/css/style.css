@@ -50,8 +50,8 @@ body {
     display: grid;
     grid-area: 2fr 1fr;
     grid-gap: 3em;
-    /*margin: 10px 5px;*/
-    padding: 5px;
+    margin: 10px 5px;   
+    /*padding: 5px;*/
 }
 .container div{
     background: #6E92A1;
