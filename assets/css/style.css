@@ -52,9 +52,9 @@ body {
 }
 
 .container{
-/*    display: grid;
+    display: grid;
     grid-area: 1fr 2fr;
-    grid-gap: 2em;*/
+    grid-gap: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -66,20 +66,18 @@ body {
     box-shadow: 0px 0px 15px 2px grey;
     display: grid;
     justify-content: center;
+    text-align: center;
     transition: 1s;
     text-transform: uppercase;
     text-shadow: 0px 2px 2px grey;  
 }
 #brand:hover{
-    transform: scale(1.02);
+    /*transform: scale(1.01);*/
 }
 
 #content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-/*    flex-wrap: wrap;   
-    flex-direction: column;*/
     box-shadow: 0px 0px 15px 2px white;
     padding: 20px;
     transition: 1s;
@@ -97,7 +95,7 @@ body {
     box-shadow: 0px 0px 15px 2px white;
 }
 
-#me{
-    width: 450px;
-    height: 400px;
+img {
+    width:  100%;
+    height: auto;
 }
