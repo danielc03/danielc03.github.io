@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(to right, white, grey)
+    background: linear-gradient(to right, white, grey);
+    margin: 0;
 }
 
 .menu{
