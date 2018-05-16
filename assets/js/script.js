@@ -1,32 +1,9 @@
-let menu = document.querySelector(".menu");
-let div = document.querySelector("div");
-
-
-const openNav = () => {
-	div.style.opacity = "0.1";
-	div.style.transition = ".5s";
-    document.querySelector("#mySidenav").style.width = "250px";
+const openSideMenu = () =>{
+	document.querySelector("#side-menu").style.width = "250px";
+	document.querySelector("#main").style.marginLeft = "250px";
 }
 
-const closeNav = () => {
-	document.querySelector(".container").style.opacity = "1";
-	div.style.transition = "2s";
-    document.querySelector("#mySidenav").style.width = "0";
-}
-
-const menuInvisible = () => {
-	menu.style.opacity = "0";
-	menu.addEventListener
-}
-
-const menuRestore = () => {
-	menu.style.opacity = "1";	
-}
-
-const menuHover = () => {
-	menu.style.color = "#A2B3CA";
-}
-
-const menuHoverOff = () => {
-	menu.style.color = "#5A7497";
+const closeSideMenu = () =>{
+	document.querySelector("#side-menu").style.width = "0";
+	document.querySelector("#main").style.marginLeft = "0";
 }

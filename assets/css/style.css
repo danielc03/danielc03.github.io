@@ -1,134 +1,95 @@
 body {
-    font-family: "Roboto", sans-serif;
-    background: #ffffff;
-    margin: 0;
+    font-family: "Roboto", Serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    background-image: url("../../images/bg7.jpg");
 }
 
-.menu{
-    transition: .5s;
-    width: 30px;
-    margin: 0.5em;
+.navbar{
+    background-color: #3b5998;
+    overflow: hidden;
+    height: 63px;
 }
 
-.sidenav {
-    margin: 2em; 
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul{
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+.side-nav{
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: #111;
+    opacity: 0.8;
     overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 60px;
-    text-transform: uppercase;
+    transition: 0.5s;  
 }
 
-.sidenav a {
-    padding: 10px 10px 10px 32px;
+.side-nav a{
+    padding: 10px 10px 10px 30px;
     text-decoration: none;
-    font-size: 25px;
-    color: #5A7497;
+    font-size: 22px;
+    color: #ccc;
     display: block;
     transition: 0.3s;
 }
-
-.sidenav a:hover {
-    color: #A2B3CA;
+.side-nav a:hover{
+    color: #fff;
 }
 
-.sidenav .closebtn {
+.side-nav .btn-close{
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 22px;
     font-size: 36px;
     margin-left: 50px;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    /*flex-direction: row;*/
-    margin: 10px 5px;   
-}
-.container div{
-    background: #6E92A1;
-}
-#brand{
+#main{
+    transition: margin-left 0.5s;
     padding: 20px;
+    overflow: hidden;
     width: 100%;
-    color: #5A7497;
-    box-shadow: 0px 0px 15px 2px #6E92A1;
-    display: flex;
-    justify-content: center;
-    transition: 1s;
-    text-transform: uppercase; 
-    border-radius: 5px;
 }
 
-#home{
-    background: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5em;
-    box-shadow: 0px 0px 15px 2px #6E92A1;
-    padding: 20px;
-    transition: 1s;
-    background-image: url("logo.jpg");
+.ptext{
+    /*display: flex;*/
 }
-#home img{
+.ptext img{
     width: 100%;
-    height: auto;
-}
+
 }
 
-#about{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-gap: 0.5em;
-    background: #ffffff;
-    box-shadow: 0px 0px 15px 2px #6E92A1;
-    padding: 20px;
-}
-#about img {
-    width: 100%;
-    height: auto;
+
+@media(max-width:568px){
+    .navbar-nav{display: none;}
 }
 
-#projects{
-    background-image: url("bg.jpg");
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 0px 0px 15px 2px #6E92A1;
-    grid-gap: 0.5em;
-    color: #ffffff;
-    padding: 20px;
-}
 
-#contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0.5em;
-    box-shadow: 0px 0px 15px 2px #6E92A1;
-    background-image: url("bg.jpg");
-    background-size: cover;
-    color: #ffffff;
-    font-weight: bold;  
-    padding: 20px;
-}
 
-@media screen and (max-height: 450px, max-width: 414px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .container{
-    display: flex;
-  }
-  .container div{
-    display: flex;
-  }
-  #home{
-    display: flex;
-}
-}
+
+
+
+
+
+

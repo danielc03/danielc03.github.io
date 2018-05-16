@@ -1,2 +1,0 @@
-# DC Development
-Portfolio Website
