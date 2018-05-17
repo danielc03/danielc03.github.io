@@ -3,6 +3,10 @@ body {
     background-color: #f4f4f4;
     overflow-x: hidden;
     background-image: url("../../images/bg7.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 .navbar{
