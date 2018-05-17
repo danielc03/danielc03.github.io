@@ -2,11 +2,6 @@ body {
     font-family: "Roboto", Serif;
     background-color: #f4f4f4;
     overflow-x: hidden;
-    background-image: url("../../images/bg7.jpg");
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
 }
 
 .navbar{
@@ -73,7 +68,7 @@ body {
     transition: margin-left 0.5s;
     padding: 20px;
     overflow: hidden;
-    width: 100%;
+    color: #bbb;
 }
 
 .ptext{
