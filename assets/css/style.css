@@ -93,10 +93,38 @@ body {
     color: #cdcdcd;
 }*/
 
-@media(max-width:568px){
-    .navbar-nav{display: none;}
+
+
+/*PROJECTS PAGE*/
+
+.ptext img{
+    width: 100%;
+    height: auto;
+    background-size: contain;
 }
 
+
+
+@media(max-width:568px){
+    .navbar-nav{display: none;}
+    .ptext span{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:568px){
+    .ptext span #one{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5em;
+    }
+    .ptext #two{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5em;
+    }
+}
 
 
 
