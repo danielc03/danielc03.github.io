@@ -11,11 +11,11 @@
 <body>
 	<nav class="navbar">
 		<span class="open-slide">
-			<a href="#" onclick="openSideMenu()">
+			<a onclick="openSideMenu()">
 				<svg width="30" height="30">
-		            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-		            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-		            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+		            <path d="M0,5 30,5" stroke="#109985" stroke-width="5"/>
+		            <path d="M0,14 30,14" stroke="#109985" stroke-width="5"/>
+		            <path d="M0,23 30,23" stroke="#109985" stroke-width="5"/>
 		        </svg>
 			</a>
 		</span>
@@ -30,25 +30,126 @@
 	</nav>
 
 	<div id="side-menu" class="side-nav">
-		<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+		<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="projects.html">Projects</a>
-		<a href="#">Contact</a>
+		<a href="#aboutme">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
 	</div>
 
 	<header id="showcase">
-		<!-- <h1>DC Development</h1> -->
+		<div class="title">
+			<!-- <h1 id="title"></h1> -->
+		</div>
+		<div class="button">
+			<a href="#aboutme"><button>EXPLORE</button></a>
+		</div>	
 	</header>
 
 	<div id="main">
 		<div class="text">
-			<span>
+			<section class="about-me" id="aboutme">
+				<img class="about-image" src="img/22877.jpg" alt="me">
+				<div class="about">
+					<h1 class="about-title">DANIEL COJOCARU</h1>
+					<h3 class="about-subtitle">WEB DEVELOPER</h3><br>
+					<div class="about-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna 
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sintation ullamco laboris nisi ut aliquip ex ea </p>
+					</div>
+				</div>
+			</section>
 
-			</span>
-		</div>
-	</div>
+			<section class="portfolio" id="projects">
+				<h1>Portfolio</h1>
+				<div class="porftolio-items">
+
+					<!-- Item 1 -->
+					<figure class="portfolio-item featured">
+						<img src="img/3.jpg" alt="porftolio-item">
+						<figcaption>
+							<h2 class="portfolio-title">Project Name</h2>
+							<p class="portfolio-desc">A short description here</p>
+							<a href="#" class="portfolio-link">More info</a>
+						</figcaption>
+					</figure>
+
+					<!-- Item 2 -->
+					<figure class="portfolio-item">
+						<img src="img/3.jpg" alt="porftolio-item">
+						<figcaption>
+							<h2 class="portfolio-title">Project Name</h2>
+							<p class="portfolio-desc">A short description here</p>
+							<a href="#" class="portfolio-link">More info</a>
+						</figcaption>
+					</figure>
+
+					<!-- Item 3 -->
+					<figure class="portfolio-item">
+						<img src="img/43.jpg" alt="porftolio-item">
+						<figcaption>
+							<h2 class="portfolio-title">Project Name</h2>
+							<p class="portfolio-desc">A short description here</p>
+							<a href="#" class="portfolio-link">More info</a>
+						</figcaption>
+					</figure>
+
+					<!-- Item 4 -->
+					<figure class="portfolio-item">
+						<img src="img/46.jpg" alt="porftolio-item">
+						<figcaption>
+							<h2 class="portfolio-title">Project Name</h2>
+							<p class="portfolio-desc">A short description here</p>
+							<a href="#" class="portfolio-link">More info</a>
+						</figcaption>
+					</figure>
+
+					<!-- Item 5 -->
+					<figure class="portfolio-item">
+						<img src="img/28.jpg" alt="porftolio-item">
+						<figcaption>
+							<h2 class="portfolio-title">Project Name</h2>
+							<p class="portfolio-desc">A short description here</p>
+							<a href="#" class="portfolio-link">More info</a>
+						</figcaption>
+					</figure>
+					
+				</div>
+			</section>
+
+			<section class="contact" id="contact">
+				<div class="contact-title">
+					<h1>Contact me</h1>
+					<div class="contact-form">
+						<form id="contact-form" method="post" action="#">
+							<input type="text" name="name" class="form-control" placeholder="Your name" required=""> <br>
+							<input type="email" name="email" class="form-control" placeholder="Your email" required=""> <br>
+							<textarea name="message" class="form-control" placeholder="Mesage" rows="4" required=""></textarea> <br>
+
+							<input type="submit" class="form-button" value="SEND MESSAGE">
+						</form>
+						<p id="my-email">cojocarugeani92@gmail.com</p>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="social-icons">
+					<div class="ft-logos">
+					<a href="https://www.instagram.com/geani.daniel" target="_blank"><img class="social-icon" src="img/instagram.svg" alt="instagram"></a></div>
+					<div class="ft-logos"><a href="https://www.linkedin.com/in/geani-daniel-cojocaru/" target="_blank">
+					<img class="social-icon" src="img/linkedin.svg" alt="linkedin"></a></div>
+					<div class="ft-logos"><a href="https://github.com/danielc03" target="_blank">
+					<img class="social-icon" src="img/github.svg" alt="github"></a></div>
+				</div>
+				<p class="copyright">&copy;2018 | Copyright DC Dev</p>
+			</footer>
+				</div>
+			</div>
 
 	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 </body>
 </html>

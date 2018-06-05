@@ -7,3 +7,7 @@ const closeSideMenu = () =>{
 	document.querySelector("#side-menu").style.width = "0";
 	document.querySelector("#main").style.marginLeft = "0";
 }
+
+// const scrollWin = () => {
+//     window.scrollBy(0, 100);
+// }
