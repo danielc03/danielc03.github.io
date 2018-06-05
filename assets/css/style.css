@@ -12,10 +12,11 @@ body {
 }
 
 .navbar{
-    /*background-color: #2b589c;*/
-    background: linear-gradient(to right, #2b589c, lightblue);
+    background-color: #2b589c;
     overflow: hidden;
     height: 63px;
+    position: fixed;
+    background-color: transparent;
 }
 
 .navbar-nav h1{
@@ -39,7 +40,7 @@ body {
 }
 
 .navbar a:hover{
-    background: linear-gradient(to right, #dddd, lightblue);
+    background-color: #ddd;
     color: #000;
 }
 
