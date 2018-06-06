@@ -6,13 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<title>DC Dev</title>
 </head>
 <body>
 	<nav class="navbar">
 		<span class="open-slide">
 			<a onclick="openSideMenu()">
-				<svg width="30" height="30">
+				<svg width="30" height="30" class="animated fadeInUp"> 
 		            <path d="M0,5 30,5" stroke="#109985" stroke-width="5"/>
 		            <path d="M0,14 30,14" stroke="#109985" stroke-width="5"/>
 		            <path d="M0,23 30,23" stroke="#109985" stroke-width="5"/>
@@ -37,16 +38,14 @@
 		<a onclick="initScroll('contact'); return false;">Contact</a>
 	</div>
 
-
 	<!-- SHOWCASE  -->
-
 
 	<header id="showcase">
 		<div class="title">
-			<!-- <h1 id="title"></h1> -->
 		</div>
+		<img src="img/0D4D4D.svg" class="animated zoomIn">
 		<div class="button">
-			<a href="#aboutme"><button onclick="initScroll('aboutme'); return false;">EXPLORE</button></a>
+			<a href="#aboutme"><button onclick="initScroll('aboutme'); return false;" class="animated fadeInUp">EXPLORE</button></a>
 		</div>	
 	</header>
 
@@ -131,7 +130,7 @@
 			
 			<section class="skills">
 				<div class="my-skills">
-					<img class="skill-icon" src="" alt="html">
+					<img class="skill-icon" src="img/skill-logos/" alt="html">
 				</div>
 				<div class="my-skills">
 					<img class="skill-icon" src="" alt="css">
