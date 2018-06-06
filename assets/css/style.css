@@ -16,16 +16,14 @@ body, html {
     bottom:0;
     right: 0;
     background: transparent;
-    font-weight: 0px;
-    border: 1px solid #494949;
-    border-radius: 10px;
-    color: #494949;
-    font-weight: bold;
-    padding: 2px; 
+    width: 30px;
+    opacity: 0.5;
     transition: 0.3s;
 }
+
 #top:hover{
     transform: scale(1.1);
+    opacity: 0.8;
 }
 
 a{
@@ -125,8 +123,8 @@ svg:hover{
     flex-direction: column;
     align-items: center;
 }
-.title{
-    padding-top: 50px;
+#showcase img{
+    width: 80vw;
 }
 
 .button{
@@ -174,18 +172,23 @@ img{
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     padding: 20px;
-    background-color: #fff;
-}
-
-.about-image{
-    width: auto;
+    background: #417D80;
     height: 100vh;
 }
 
+.about-image{
+    width: 80%;
+    height: auto;
+    align-self: center;
+    transform: 0.3s;
+}
+
+.about-image:hover{
+    transform: scale(1.02);
+}
+
 .about{
-    background: linear-gradient(90deg , #2b589c, #109985);   
-    box-shadow: 3px 3px 10px 3px #646464; 
-    height: 50%;
+    height: auto;
     align-self: center;
     padding: 20px;
     text-align: center;
@@ -199,6 +202,7 @@ img{
     padding: 50px;
     text-transform: uppercase;
     color: #ddd;
+    /*border-bottom: 2px solid black;*/
 }
 
 .porftolio-items{
@@ -206,7 +210,6 @@ img{
     grid-template-columns: repeat(2, 2fr);
     grid-gap: 2em;
     margin: 1em;
-    border-bottom: 2px solid black;
     padding: 30px;
 }
 
@@ -230,6 +233,39 @@ img{
     color: #109985;
 }
 
+/*///////////// SKILLS ///////////////////*/
+
+.knowledge{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    background: #417D80;
+}
+
+.my-knowledge{
+   border: 1px solid black;
+   margin: 30px;
+   padding: 20px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-gap: 2em;
+    margin: 1em;
+    padding: 40px;
+
+}
+
+.my-skills{
+    width: 10vw;
+    height: auto;
+    /*border: 1px solid black;*/
+}
+
+
 
 /*///////////// CONTACT ///////////////////*/
 
@@ -241,6 +277,7 @@ img{
 }
 
 .contact-title{
+    margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
     transition: all 2s ease-in-out;
@@ -254,7 +291,7 @@ img{
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000;
     color: #000;
     font-size: 18px;
     margin-bottom: 16px;
@@ -288,12 +325,6 @@ img{
     color: #ddd;
     opacity: .7;
 }
-
-
-/*///////////// SKILLS ///////////////////*/
-
-
-
 
 
 /*///////////// FOOTER ///////////////////*/
@@ -336,9 +367,17 @@ footer{
         width: 100%;
         height: auto;
     }
+
+    .about-image{
+        padding: 20px;
+        align-self: center;
+    }
+
     .about-me{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: auto;
     }
 
     .ft-logos{
@@ -348,7 +387,17 @@ footer{
     .form-control{
         width: auto;
     }
+    .skills{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 0;
+        height: auto;
+    }
+    .my-skills{
+        width: 50%;
+    }
 }
+
 
 
 
