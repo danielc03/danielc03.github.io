@@ -111,6 +111,11 @@ svg:hover{
 
 /*///////////// SHOWCASE ///////////////////*/
 
+/*#welcome{
+    padding-top: 70px;
+    color: #109985; 
+}
+*/
 #showcase{
     background: url("../../img/logo.jpg");
     background-repeat: no-repeat;
