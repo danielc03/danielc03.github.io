@@ -112,12 +112,12 @@ svg:hover{
 
 
 #showcase{
-    background: url("../../images/43.jpg");
+    background: url("../../img/43.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: #f2f2f2;
+    /*color: #f2f2f2;*/
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -132,7 +132,7 @@ svg:hover{
 
 }
 .button button{
-    background: linear-gradient(to right, #109985, #646464);
+    background: #109985;
     color: #ddd;
     border: none;
     border-radius: 20px;
@@ -147,7 +147,7 @@ svg:hover{
 
 .button button:hover{
     transform: scale(1.04);
-    background: linear-gradient(to right, #646464, #109985);
+    background: #109898;
     border: none;
 }
 
@@ -253,21 +253,20 @@ img{
 }
 
 .form-button {
-    background-color: transparent;
+    background-color:  #109985;
     color: #000;
-    border: 2px solid #109985;
+    border: none;
     border-radius: 10px;
     height: 30px;
     width: 200px;
     font-weight: bold;
     transition: 0.3s;
-    box-shadow: 0px 0px 3px 2px #109985; 
     transition: .5s;
     cursor: pointer;
 }
 
 .form-button:hover{
-    transform: scale(1.1);
+    background: #109898;
 }
 
 #my-email{
