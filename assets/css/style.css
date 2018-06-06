@@ -246,6 +246,7 @@ img{
     flex-direction: column;
     text-align: center;
     background: #417D80;
+    align-items: center;
 }
 
 .my-knowledge{
@@ -257,18 +258,19 @@ img{
 .skills{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
     grid-gap: 2em;
     margin: 1em;
-    padding: 40px;
-
+    padding: 20px;
 }
 
 .my-skills{
     width: 10vw;
     height: auto;
+    align-self: center;
     /*border: 1px solid black;*/
 }
+
+
 
 
 
@@ -385,6 +387,11 @@ footer{
         height: auto;
     }
 
+    .about-text p{
+        padding: 20px;
+        align-self: center;
+    }
+
     .ft-logos{
         width: 15%;
     }
@@ -394,12 +401,11 @@ footer{
     }
     .skills{
         display: grid;
-        grid-template-columns: 2fr 2fr;
-        padding: 0;
-        height: auto;
+        grid-template-columns: 1fr 1fr;
     }
     .my-skills{
         width: 50%;
+        align-self: center;
     }
 }
 
