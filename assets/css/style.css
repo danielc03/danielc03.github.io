@@ -80,7 +80,7 @@ svg:hover{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #109985;
+    background-color: transparent;
     opacity: 0.7;
     overflow-x: hidden;
     padding-top: 60px;
@@ -180,7 +180,7 @@ img{
     width: 80%;
     height: auto;
     align-self: center;
-    transform: 0.3s;
+    transform: 0.5s;
 }
 
 .about-image:hover{
