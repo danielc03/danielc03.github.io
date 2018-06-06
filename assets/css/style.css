@@ -11,6 +11,23 @@ body, html {
     overflow-x: hidden;
 }
 
+#top{
+    position: fixed;
+    bottom:0;
+    right: 0;
+    background: transparent;
+    font-weight: 0px;
+    border: 1px solid #494949;
+    border-radius: 10px;
+    color: #494949;
+    font-weight: bold;
+    padding: 2px; 
+    transition: 0.3s;
+}
+#top:hover{
+    transform: scale(1.1);
+}
+
 a{
     cursor: pointer;
     text-decoration: none;
@@ -92,6 +109,8 @@ svg:hover{
     margin-left: 50px;
 }
 
+
+
 #showcase{
     background: url("../../images/43.jpg");
     background-repeat: no-repeat;
@@ -113,9 +132,9 @@ svg:hover{
 
 }
 .button button{
-    background-color: #109985;
+    background: linear-gradient(to right, #109985, #646464);
     color: #ddd;
-    border: 2px solid #109985;
+    border: none;
     border-radius: 20px;
     height: 35px;
     width: 160px;
@@ -127,7 +146,9 @@ svg:hover{
 }
 
 .button button:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
+    background: linear-gradient(to right, #646464, #109985);
+    border: none;
 }
 
 .button button a{
@@ -200,8 +221,6 @@ img{
 }
 
 .contact{
- /*   margin-top: 150px;
-    margin-bottom: 200px;*/
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -223,10 +242,11 @@ img{
     border: none;
     outline: none;
     border-bottom: 1px solid #ddd;
-    columns: #fff;
+    color: #000;
     font-size: 18px;
     margin-bottom: 16px;
 }
+
 
 .contact-form input{
     height: 55px;
@@ -253,7 +273,7 @@ img{
 #my-email{
     margin-top: 50px;
     font-weight: bold;
-    color: lightgrey;
+    color: #ddd;
     opacity: .7;
 }
 

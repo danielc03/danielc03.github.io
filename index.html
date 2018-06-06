@@ -31,10 +31,10 @@
 
 	<div id="side-menu" class="side-nav">
 		<a class="btn-close" onclick="closeSideMenu()">&times;</a>
-		<a href="#" onclick="initScroll(); return false;">Home</a>
-		<a href="#aboutme" onclick="initScroll('aboutme'); return false;" >About</a>
-		<a href="#projects" onclick="initScroll('projects'); return false;">Projects</a>
-		<a href="#contact" onclick="initScroll('contact'); return false;">Contact</a>
+		<a onclick="initScroll('showcase'); return false;">Home</a>
+		<a  onclick="initScroll('aboutme'); return false;" >About</a>
+		<a  onclick="initScroll('projects'); return false;">Projects</a>
+		<a onclick="initScroll('contact'); return false;">Contact</a>
 	</div>
 
 	<header id="showcase">
@@ -42,9 +42,11 @@
 			<!-- <h1 id="title"></h1> -->
 		</div>
 		<div class="button">
-			<a href="#aboutme"><button>EXPLORE</button></a>
+			<a href="#aboutme"><button onclick="initScroll('aboutme'); return false;">EXPLORE</button></a>
 		</div>	
 	</header>
+
+	<a onclick="toTop('showcase'); return false" id="top">TOP</a>
 
 	<div id="main">
 		<div class="text">
@@ -150,6 +152,6 @@
 			</div>
 
 	<script type="text/javascript" src="assets/js/script.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<!-- 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
 </body>
 </html>
