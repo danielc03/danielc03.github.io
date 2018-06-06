@@ -149,7 +149,13 @@ img{
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     padding: 20px;
-    background-color: white;
+    background-color: #fff;
+
+}
+
+.about-image{
+    width: auto;
+    height: 100vh;
 }
 
 .about{
@@ -194,8 +200,9 @@ img{
 }
 
 .contact{
-    margin-top: 150px;
-    margin-bottom: 200px;
+ /*   margin-top: 150px;
+    margin-bottom: 200px;*/
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -288,11 +295,15 @@ footer{
         flex-direction: column;
     }
 
-
     .ft-logos{
         width: 15%;
     }
+
+    .form-control{
+        width: auto;
+    }
 }
+
 
 
 
