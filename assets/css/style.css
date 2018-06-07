@@ -4,7 +4,7 @@
 }
 body, html {
     margin: 0;
-    font-family: "Roboto", Serif;
+    font-family: 'Contrail One', cursive , Serif;
     font-size: 17px;
     line-height: 1.6;
     background: linear-gradient(90deg , #2b589c, #109985);
@@ -185,7 +185,9 @@ img{
     width: 80%;
     height: auto;
     align-self: center;
-    transform: 0.5s;
+    transition: 0.3s;
+    border: 2px solid #109985;
+    box-shadow: 0px 0px 15px 5px #ddd; 
 }
 
 .about-image:hover{
@@ -220,6 +222,7 @@ img{
 
 .portfolio-item{
     box-shadow: 0px 0px 15px 5px #ddd;
+    border: 2px solid #109985;
     color: #ddd;
     text-align: center;
     padding: 5px;
@@ -240,39 +243,57 @@ img{
 
 /*///////////// SKILLS ///////////////////*/
 
+
 .knowledge{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
     background: #417D80;
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .my-knowledge{
-   border: 1px solid black;
-   margin: 30px;
-   padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 50px;*/
 }
 
 .skills{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-back {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2em;
-    margin: 1em;
-    padding: 20px;
+    padding-top: 30px;
+    /*grid-gap: 1fr;*/
+    /*margin-top: 20px;*/
 }
+
 
 .my-skills{
-    width: 10vw;
-    height: auto;
-    align-self: center;
-    /*border: 1px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #ddd;
 }
 
-
-
-
+.skill-icon{
+    width: 30%;
+}
 
 /*///////////// CONTACT ///////////////////*/
 
@@ -281,6 +302,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-title{
@@ -309,6 +331,11 @@ img{
     height: 10vh;
 }
 
+::placeholder{
+    color: #000;
+    opacity: 0.5;
+}
+
 .form-button {
     background-color:  #109985;
     color: #000;
@@ -324,13 +351,6 @@ img{
 
 .form-button:hover{
     background: #109898;
-}
-
-#my-email{
-    margin-top: 50px;
-    font-weight: bold;
-    color: #ddd;
-    opacity: .7;
 }
 
 
@@ -360,7 +380,7 @@ footer{
 }
 
 
-@media(max-width:1242px){
+@media(max-width:1242px),(max-height: 422px){
 
     .showcase img{
         width: 600;
@@ -369,7 +389,8 @@ footer{
     .porftolio-items{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         padding: 0;
         width: 100%;
         height: auto;
@@ -392,20 +413,16 @@ footer{
         align-self: center;
     }
 
-    .ft-logos{
-        width: 15%;
+    .skill-icon{
+        width: 50%;
     }
 
     .form-control{
         width: auto;
     }
-    .skills{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .my-skills{
-        width: 50%;
-        align-self: center;
+
+    .ft-logos{
+        width: 15%;
     }
 }
 
