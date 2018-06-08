@@ -7,7 +7,7 @@ body, html {
     font-family: 'Contrail One', cursive , Serif;
     font-size: 17px;
     line-height: 1.6;
-    background: linear-gradient(90deg , #2b589c, #109985);
+    background: linear-gradient(89deg, #7ab77a 0%, #028c9b 100%);
     overflow-x: hidden;
 }
 
@@ -53,11 +53,11 @@ svg:hover{
     background-color: transparent;
 }
 
-.navbar-nav h1{
+/*.navbar-nav h1{
     float: right;
     margin: 10px;
     color: #ddd;
-}
+}*/
 .navbar a{
     float: left;
     display: block;
@@ -152,7 +152,7 @@ svg:hover{
 
 .button button:hover{
     transform: scale(1.04);
-    background: #109898;
+    background: #028c9b;
     border: none;
 }
 
@@ -173,12 +173,16 @@ img{
 /*///////////// ABOUT ///////////////////*/
 
 .about-me{
+    background: #028c9b;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     padding: 60px 20px;
-    background: #417D80;
     height: 100%;
+}
+
+.about-me h1{
+    color: #ddd;
 }
 
 .about-image{
@@ -208,33 +212,45 @@ img{
     text-align: center;
     padding: 50px;
     text-transform: uppercase;
-    color: #ddd;
+    /*color: #ddd;*/
     /*border-bottom: 2px solid black;*/
 }
 
 .porftolio-items{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
     margin: 1em;
     padding: 30px;
+    /*color: #ddd;*/
 }
 
 .portfolio-item{
     box-shadow: 0px 0px 15px 5px #ddd;
     border: 2px solid #109985;
-    color: #ddd;
+    /*color: #ddd;*/
     text-align: center;
     padding: 5px;
     transition: 0.4s;
 }
+
+.portfolio-desc{
+    color: #ddd;    
+}
+
 .portfolio-item:hover{
     transform: scale(1.02);
+}
+
+.portfolio-item img{
+
 }
 
 .portfolio-link{
     font-weight: bold;
     transition: all 0.3s ease-in-out;
+    color: #646464;
+    opacity: 0.7;
 }
 
 .portfolio-link:hover{
@@ -245,7 +261,7 @@ img{
 
 
 .knowledge{
-    background: #417D80;
+    background: #028c9b;
     padding: 50px;
     height: 100vh;
     display: flex;
@@ -271,6 +287,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #ddd;
 }
 
 .front-back {
