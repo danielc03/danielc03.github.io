@@ -34,12 +34,13 @@ a{
 
 svg{
     border-radius: 30%;
-    opacity: 0.7;
+    opacity: 0.6;
     transition: 0.3s;
 }
 svg:hover{
     transform: scale(1.2);
     border-radius: 100%;
+    opacity: 1;
 }
 
 
@@ -53,11 +54,6 @@ svg:hover{
     background-color: transparent;
 }
 
-/*.navbar-nav h1{
-    float: right;
-    margin: 10px;
-    color: #ddd;
-}*/
 .navbar a{
     float: left;
     display: block;
@@ -111,33 +107,37 @@ svg:hover{
 
 /*///////////// SHOWCASE ///////////////////*/
 
-/*#welcome{
-    padding-top: 70px;
-    color: #109985; 
-}
-*/
 #showcase{
     background: url("../../img/logo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
-    /*color: #f2f2f2;*/
+    display: grid;
+    grid-template-rows: 1fr;
+    align-self: center;
+}
+
+.title{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
-#showcase img{
-    width: 80vw;
+
+.showcase-img{
+    width: 40%;
+    height: auto;
 }
 
 .button{
-    padding-bottom: 50px; 
+    padding-top: 50px; 
 
 }
 .button button{
-    background: #109985;
+    background: #028c9b;
     color: #ddd;
     border: none;
     border-radius: 20px;
@@ -150,10 +150,8 @@ svg:hover{
     cursor: pointer;
 }
 
-.button button:hover{
-    transform: scale(1.04);
-    background: #028c9b;
-    border: none;
+button:hover{
+    background: #109985;
 }
 
 .button button a{
@@ -177,7 +175,7 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
-    padding: 60px 20px;
+    padding: 60px 30px;
     height: 100%;
 }
 
@@ -212,7 +210,7 @@ img{
     text-align: center;
     padding: 50px;
     text-transform: uppercase;
-    /*color: #ddd;*/
+    color: #ddd;
     /*border-bottom: 2px solid black;*/
 }
 
@@ -235,7 +233,7 @@ img{
 }
 
 .portfolio-desc{
-    color: #ddd;    
+    color: #000;    
 }
 
 .portfolio-item:hover{
@@ -254,7 +252,7 @@ img{
 }
 
 .portfolio-link:hover{
-    color: #109985;
+    color: #283d28;
 }
 
 /*///////////// SKILLS ///////////////////*/
@@ -262,13 +260,14 @@ img{
 
 .knowledge{
     background: #028c9b;
-    padding: 50px;
+    /*padding: 20px;*/
     height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
+    /*text-align: center;*/
 }
 
 .my-knowledge{
@@ -277,25 +276,21 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     /*padding: 50px;*/
 }
 
-.skills{
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.skills-title{
     color: #ddd;
 }
 
-.front-back {
+.skills{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-top: 30px;
-    /*grid-gap: 1fr;*/
+    grid-template-columns: repeat(4, 2fr);
+    padding: 30px 10px;
+    /*align-self: center;*/
     /*margin-top: 20px;*/
+    /*grid-gap: 1fr;*/
 }
 
 
@@ -305,11 +300,12 @@ img{
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
-    color: #ddd;
+    padding: 10px;
 }
 
-.skill-icon{
-    width: 30%;
+.my-skills svg{
+    width: 100px;
+    height: auto;
 }
 
 /*///////////// CONTACT ///////////////////*/
@@ -354,11 +350,11 @@ img{
 }
 
 .form-button {
-    background-color:  #109985;
+    background-color: #028c9b;
     color: #000;
     border: none;
     border-radius: 10px;
-    height: 30px;
+    height: 20px;
     width: 200px;
     font-weight: bold;
     transition: 0.3s;
@@ -367,7 +363,7 @@ img{
 }
 
 .form-button:hover{
-    background: #109898;
+    background: #109985;
 }
 
 
@@ -400,12 +396,7 @@ footer{
 
 @media(max-width:1242px),(max-height: 422px){
 
-    .porftolio-items{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+    .showcase-img{
         width: 100%;
         height: auto;
     }
@@ -426,8 +417,22 @@ footer{
         align-self: center;
     }
 
-    .my-skills{
-        font-size: 10px;
+    .porftolio-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .knowledge{
+        align-items: center;
+    }
+
+    .my-skills svg{
+        width: 70px;
     }
 
     .skill-icon{
@@ -442,6 +447,7 @@ footer{
         width: 15%;
     }
 }
+
 
 
 
