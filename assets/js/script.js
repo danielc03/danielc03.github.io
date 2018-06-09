@@ -26,6 +26,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 //  TOP BUTTON
 
+let marginY = 0;
+let speed = 10;
+let scroller = null;
+
 const toTop = (elementId) => {
 	destination = document.querySelector(`#${elementId}`).offsetTop;
 
