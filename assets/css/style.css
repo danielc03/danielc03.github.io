@@ -32,12 +32,12 @@ a{
     color: inherit;
 }
 
-svg{
+.svg-nav{
     border-radius: 30%;
     opacity: 0.6;
     transition: 0.3s;
 }
-svg:hover{
+.svg-nav:hover{
     transform: scale(1.2);
     border-radius: 100%;
     opacity: 1;
