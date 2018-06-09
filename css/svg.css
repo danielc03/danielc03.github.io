@@ -1,0 +1,121 @@
+#html svg #html1 {
+  transition: 0.5s; }
+
+#html svg #html2 {
+  transition: 2s; }
+
+#html svg #html3 {
+  transition: 2s; }
+
+#html svg:hover #html1 {
+  fill: #E44D26; }
+
+#html svg:hover #html2 {
+  fill: #EBEBEB; }
+
+#html svg:hover #html3 {
+  fill: #fff; }
+
+#css svg #css1 {
+  transition: 0.5s; }
+
+#css svg #css2 {
+  transition: 2s; }
+
+#css svg #css3 {
+  transition: 2s; }
+
+#css svg #css4 {
+  transition: 2s; }
+
+#css svg #css5 {
+  transition: 2s; }
+
+#css svg:hover #css1 {
+  fill: #1572B6; }
+
+#css svg:hover #css2 {
+  fill: #fff; }
+
+#css svg:hover #css3 {
+  fill: #EBEBEB; }
+
+#css svg:hover #css4 {
+  fill: #fff; }
+
+#css svg:hover #css5 {
+  fill: #EBEBEB; }
+
+#javascript svg #js1 {
+  transition: 0.5s; }
+
+#javascript svg #js2 {
+  transition: 2s; }
+
+#javascript svg:hover #js1 {
+  fill: #F0DB4F; }
+
+#javascript svg:hover #js2 {
+  fill: #323330; }
+
+#react svg #react1 {
+  transition: 0.5s; }
+
+#react svg:hover #react1 {
+  fill: #53c1de; }
+
+#nodejs svg #node1 {
+  transition: 0.5s; }
+
+#nodejs svg:hover #node1 {
+  fill: #83CD29; }
+
+#postgres svg #sql1 {
+  transition: 0.5s; }
+
+#postgres svg #sql2 {
+  transition: 0.5s; }
+
+#postgres svg #sql3 {
+  transition: 0.5s; }
+
+#postgres svg #sql4 {
+  transition: 2s; }
+
+#postgres svg #sql5 {
+  transition: 2s; }
+
+#postgres svg:hover #sql1 {
+  fill: #000; }
+
+#postgres svg:hover #sql2 {
+  fill: #000; }
+
+#postgres svg:hover #sql3 {
+  fill: #336791; }
+
+#postgres svg:hover #sql4 {
+  fill: #fff; }
+
+#postgres svg:hover #sql5 {
+  fill: #fff; }
+
+#git svg #git1 {
+  transition: 0.5s; }
+
+#git svg:hover #git1 {
+  fill: #F34F29; }
+
+#github svg #github1 {
+  transition: 0.5s; }
+
+#github svg #github2 {
+  transition: 0.5s; }
+
+#github svg:hover #github1 {
+  fill: #000; }
+
+#github svg:hover #github2 {
+  fill: #000; }
+
+/*028c9b*/
