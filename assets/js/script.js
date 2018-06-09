@@ -13,25 +13,15 @@ const closeSideMenu = () =>{
 
 // Smooth scrolling
 
-let marginY = 0;
-let destination = 0;
-let speed = 10;
-let scroller = null;
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-const initScroll = (elementId) => {
-	destination = document.querySelector(`#${elementId}`).offsetTop;
-
-	scroller = setTimeout(function(){
-		initScroll(elementId);
-	}, 1);
-	marginY += speed;
-
-	if(marginY >= destination){
-		clearTimeout(scroller);
-	}
-
-	window.scroll(0, marginY);
-};
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 
 //  TOP BUTTON

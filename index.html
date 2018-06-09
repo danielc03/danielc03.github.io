@@ -33,17 +33,16 @@
 
 	<div id="side-menu" class="side-nav">
 		<a class="btn-close" onclick="closeSideMenu()">&times;</a>
-		<a onclick="initScroll('showcase'); return false;">Home</a>
-		<a  onclick="initScroll('aboutme'); return false;" >About</a>
-		<a  onclick="initScroll('projects'); return false;">Projects</a>
-		<a onclick="initScroll('knowledge'); return false;">Skills</a>
-		<a onclick="initScroll('contact'); return false;">Contact</a>
+		<a href="#showcase">Home</a>
+		<a  href="#aboutme" >About</a>
+		<a  href="#projects">Projects</a>
+		<a href="#knowledge">Skills</a>
+		<a href="#contact">Contact</a>
 	</div>
 
 	<!-- SHOWCASE  -->
 	
 	<header id="showcase">
-		<!-- <h2 id="welcome" class="animated fadeInDown">WELCOME</h2> -->
 			<div class="title">
 				<div class="showcase-img">
 					<img src="img/028c9bs.svg" class="animated fadeInDown">
@@ -143,7 +142,7 @@
 			<section class="knowledge" id="knowledge">	
 				<div class="my-knowledge">	
 					<h2 class="skills-title">SKILLS</h2>
-					<p>I have adept knowledge of front end tools such as React and Javascript along with a solid understanding of back end technologies. </p>
+					<p>I have adept knowledge of front end tools such as JavaScript and React along with a solid understanding of back end technologies. </p>
 				</div>
 				<div class="skills">
 					<!-- FRONT END -->
@@ -220,7 +219,7 @@
 						<form id="contact-form" method="post" action="#">
 							<input type="text" name="name" class="form-control" placeholder="Your name" required=""> <br>
 							<input type="email" name="email" class="form-control" placeholder="Your email" required=""> <br>
-							<textarea name="message" class="form-control" placeholder="Mesage" rows="4" required=""></textarea> <br>
+							<textarea name="message" class="form-control" placeholder="Message" rows="4" required=""></textarea> <br>
 
 							<input type="submit" class="form-button" value="SEND MESSAGE">
 						</form>
