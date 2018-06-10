@@ -233,8 +233,6 @@
   animation-duration: 10s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-/*  -webkit-transition:3s;
-  transition: 3s;*/
 }
 
 .bg.infinite {
@@ -244,26 +242,29 @@
 
 @-webkit-keyframes showcase {
   from {
-    -webkit-background: url("../../img/logo.jpg");
-    background: url("../../img/logo.jpg");
+    -webkit-background: url("../../img/bg/bg.jpg");
+    background: url("../../img/bg/bg.jpg");
   }
-
-  25% {
-    -webkit-background: url("../../img/logo1.jpg");
-    background: url("../../img/logo1.jpg");
+  20% {
+    -webkit-background: url("../../img/bg/bg1.jpg");
+    background: url("../../img/bg/bg1.jpg");
   }
-  50% {
-    -webkit-background: url("../../img/logo2.jpg");
-    background: url("../../img/logo2.jpg");
+  40% {
+    -webkit-background: url("../../img/bg/bg2.jpg");
+    background: url("../../img/bg/bg2.jpg");
   }
-  75% {
-    -webkit-background: url("../../img/logo1.jpg");
-    background: url("../../img/logo.jpg");
+  60% {
+    -webkit-background: url("../../img/bg/bg1.jpg");
+    background: url("../../img/bg/bg1.jpg");
+  }
+  80% {
+    -webkit-background: url("../../img/bg/bg.jpg");
+    background: url("../../img/bg/bg.jpg");
   }
 
   to {
-    -webkit-background: url("../../img/logo.jpg");
-    background: url("../../img/logo.jpg");
+    -webkit-background: url("../../img/bg/bg.jpg");
+    background: url("../../img/bg/bg.jpg");
   }
 }
 .showcase {
