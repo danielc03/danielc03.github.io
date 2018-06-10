@@ -391,6 +391,11 @@ footer {
   }
 
   /***** PORTFOLIO *****/
+
+  .portfolio-item{
+    margin: 15px 5px 15px 5px;
+  }
+
   .portfolio-item img{
   width: 200px;
   height: 150px; 
