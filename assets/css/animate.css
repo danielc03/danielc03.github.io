@@ -244,27 +244,34 @@
   from {
     -webkit-background: url("../../img/bg/bg.jpg");
     background: url("../../img/bg/bg.jpg");
+    background-size: cover;
+    background-position: center;
   }
-  20% {
+  25% {
     -webkit-background: url("../../img/bg/bg1.jpg");
     background: url("../../img/bg/bg1.jpg");
+    background-size: cover;
+    background-position: center;
   }
-  40% {
+
+  50% {
     -webkit-background: url("../../img/bg/bg2.jpg");
     background: url("../../img/bg/bg2.jpg");
+    background-size: cover;
+    background-position: center;
   }
-  60% {
+  75% {
     -webkit-background: url("../../img/bg/bg1.jpg");
-    background: url("../../img/bg/bg1.jpg");
-  }
-  80% {
-    -webkit-background: url("../../img/bg/bg.jpg");
     background: url("../../img/bg/bg.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
   to {
     -webkit-background: url("../../img/bg/bg.jpg");
     background: url("../../img/bg/bg.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 .showcase {
