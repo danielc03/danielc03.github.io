@@ -262,7 +262,7 @@
   }
   75% {
     -webkit-background: url("../../img/bg/bg1.jpg");
-    background: url("../../img/bg/bg.jpg");
+    background: url("../../img/bg/bg1.jpg");
     background-size: cover;
     background-position: center;
   }
