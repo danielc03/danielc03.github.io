@@ -242,34 +242,34 @@
 
 @-webkit-keyframes showcase {
   from {
-    -webkit-background: url("../../img/bg/bg.jpg");
-    background: url("../../img/bg/bg.jpg");
+    -webkit-background: url("../../img/bg.jpg");
+    background: url("../../img/bg.jpg");
     background-size: cover;
     background-position: center;
   }
   25% {
-    -webkit-background: url("../../img/bg/bg1.jpg");
-    background: url("../../img/bg/bg1.jpg");
+    -webkit-background: url("../../img/bg1.jpg");
+    background: url("../../img/bg1.jpg");
     background-size: cover;
     background-position: center;
   }
 
   50% {
-    -webkit-background: url("../../img/bg/bg2.jpg");
-    background: url("../../img/bg/bg2.jpg");
+    -webkit-background: url("../../img/bg2.jpg");
+    background: url("../../img/bg2.jpg");
     background-size: cover;
     background-position: center;
   }
   75% {
-    -webkit-background: url("../../img/bg/bg1.jpg");
-    background: url("../../img/bg/bg1.jpg");
+    -webkit-background: url("../../img/bg1.jpg");
+    background: url("../../img/bg1.jpg");
     background-size: cover;
     background-position: center;
   }
 
   to {
-    -webkit-background: url("../../img/bg/bg.jpg");
-    background: url("../../img/bg/bg.jpg");
+    -webkit-background: url("../../img/bg.jpg");
+    background: url("../../img/bg.jpg");
     background-size: cover;
     background-position: center;
   }
