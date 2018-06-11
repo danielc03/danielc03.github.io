@@ -358,13 +358,14 @@ footer {
   transform: scale(1.1); 
 }
 
-@media (max-width: 1242px), (max-height: 422px) {
+@media (max-width: 1242px), (max-height: 422px)  {
 
   /****** SHOWCASE *****/
-  .showcase-img {
+/*  .showcase-img {
     width: 100%;
     height: auto; 
-  }
+  }*/
+
 
   /***** ABOUT *****/
   .about-me {
@@ -468,3 +469,11 @@ footer {
     width: auto;
   }
 }
+
+@media (max-width: 800px), (max-height: 550px) {
+
+  ***** SHOWCASE ****
+  .showcase-img {
+    width: 100%;
+    height: auto; 
+  }
