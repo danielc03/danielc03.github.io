@@ -361,10 +361,10 @@ footer {
 @media (max-width: 1242px), (max-height: 422px)  {
 
   /****** SHOWCASE *****/
-/*  .showcase-img {
-    width: 100%;
+  .showcase-img {
+    width: 70%;
     height: auto; 
-  }*/
+  }
 
 
   /***** ABOUT *****/
@@ -472,7 +472,7 @@ footer {
 
 @media (max-width: 800px), (max-height: 550px) {
 
-  ***** SHOWCASE ****
+/*  ***** SHOWCASE *****/
   .showcase-img {
     width: 100%;
     height: auto; 
