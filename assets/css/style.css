@@ -437,13 +437,27 @@ footer {
   }
 
   /***** CONTACT *****/
-  .form-control {
+/*  .form-control {
     width: auto; 
+  }*/
+  .gform input{
+    height: 20px;
+    font-size: 10px;
+    width: auto;
   }
   .ft-logos {
     width: 10%; 
   } 
+}
+
+@media (max-width: 800px), (max-height: 550px) {
+
+/*  ***** SHOWCASE *****/
+  .showcase-img {
+    width: 100%;
+    height: auto; 
   }
+}
 
 @media (max-width: 668px){
 
@@ -468,12 +482,30 @@ footer {
   .my-skills{
     width: auto;
   }
+
+  .contact-title h2{
+    font-size: 18px;
+  }
+
+  .form-control{
+    width: auto;
+  }
+
+  .form-button {
+    height: 35px;
+    width: 110px;
+    font-size: 12px;
+  }
+
+  ::placeholder {
+  font-size: 14px; }
 }
 
-@media (max-width: 800px), (max-height: 550px) {
+@media (max-width: 400px), (max-height: 520px) {
 
 /*  ***** SHOWCASE *****/
   .showcase-img {
-    width: 100%;
+    width: 30%;
     height: auto; 
   }
+}

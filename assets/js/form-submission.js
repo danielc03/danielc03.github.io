@@ -3,14 +3,14 @@ const validEmail = (email) => { // see:
   return re.test(email);
 }
 
-const validateHuman = (honeypot) => {
-  if (honeypot) {  //if hidden form filled up
-    console.log("Robot Detected!");
-    return true;
-  } else {
-    console.log("Welcome Human!");
-  }
-}
+// const validateHuman = (honeypot) => {
+//   if (honeypot) {  //if hidden form filled up
+//     console.log("Robot Detected!");
+//     return true;
+//   } else {
+//     console.log("Welcome Human!");
+//   }
+// }
 
 // get all data in form and return object
 const getFormData = () => {
@@ -57,7 +57,7 @@ const getFormData = () => {
   data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
   data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-  console.log(data);
+  // console.log(data);
   return data;
 }
 
@@ -84,8 +84,8 @@ const handleFormSubmit = (event) => {  // handles form submit withtout any jquer
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange =  () => {
-        console.log( xhr.status, xhr.statusText )
-        console.log(xhr.responseText);
+        // console.log( xhr.status, xhr.statusText )
+        // console.log(xhr.responseText);
         document.getElementById("gform").style.display = "none"; // hide form
         const thankYouMessage = document.getElementById("thankyou_message");
         if (thankYouMessage) {
@@ -101,7 +101,7 @@ const handleFormSubmit = (event) => {  // handles form submit withtout any jquer
   }
 }
 const loaded = () => {
-  console.log("Contact form submission handler loaded successfully.");
+  // console.log("Contact form submission handler loaded successfully.");
   // bind to the submit event of our form
   const form = document.getElementById("gform");
   form.addEventListener("submit", handleFormSubmit, false);

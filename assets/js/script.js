@@ -1,14 +1,31 @@
 //  Menu
 
+const sideMenu = document.querySelector("#side-menu");
+const close = document.querySelector(".btn-close");
+const showcase = document.querySelector("#showcase");
+const about = document.querySelector("#aboutme");
+const projects = document.querySelector("#projects");
+const knowledge = document.querySelector("#knowledge");
+const contact = document.querySelector("#contact");
+const footer = document.querySelector("footer");
+
 const openSideMenu = () =>{
-	document.querySelector("#side-menu").style.width = "250px";
-	document.querySelector("#main").style.marginLeft = "250px";
+	sideMenu.style.width = "250px";
 };
 
+//  Closing side menu
+
 const closeSideMenu = () =>{
-	document.querySelector("#side-menu").style.width = "0";
-	document.querySelector("#main").style.marginLeft = "0";
+	sideMenu.style.width = "0";
 };
+
+const closeMenu = (id) => {
+	id.addEventListener("click", closeSideMenu);
+}
+
+const tags = [close, showcase, about, projects, knowledge, contact, footer];
+tags.forEach(closeMenu);
+
 
 
 // Smooth scrolling
@@ -16,7 +33,6 @@ const closeSideMenu = () =>{
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
