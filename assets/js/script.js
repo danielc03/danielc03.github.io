@@ -1,13 +1,8 @@
 //  Menu
 
 const sideMenu = document.querySelector("#side-menu");
-const close = document.querySelector(".btn-close");
-const showcase = document.querySelector("#showcase");
-const about = document.querySelector("#aboutme");
-const projects = document.querySelector("#projects");
-const knowledge = document.querySelector("#knowledge");
-const contact = document.querySelector("#contact");
-const footer = document.querySelector("footer");
+
+//  Opening side menu 
 
 const openSideMenu = () =>{
 	sideMenu.style.width = "250px";
@@ -21,11 +16,12 @@ const closeSideMenu = () =>{
 
 const closeMenu = (id) => {
 	id.addEventListener("click", closeSideMenu);
-}
+};
 
-const tags = [close, showcase, about, projects, knowledge, contact, footer];
-tags.forEach(closeMenu);
+//closing menu by clicking on body
 
+const closeMenuClass = document.querySelectorAll(".closeMenu");
+closeMenuClass.forEach(closeMenu);
 
 
 // Smooth scrolling

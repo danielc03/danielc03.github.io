@@ -501,9 +501,9 @@ footer {
   font-size: 14px; }
 }
 
-@media (max-width: 400px), (max-height: 520px) {
+@media, (max-height: 550px) {
 
-/*  ***** SHOWCASE *****/
+  /****** SHOWCASE *****/
   .showcase-img {
     width: 30%;
     height: auto; 
