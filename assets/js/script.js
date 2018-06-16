@@ -14,14 +14,16 @@ const closeSideMenu = () =>{
 	sideMenu.style.width = "0";
 };
 
-const closeMenu = (id) => {
+const closeMenuClick = (id) => {
 	id.addEventListener("click", closeSideMenu);
 };
 
 //closing menu by clicking on body
 
 const closeMenuClass = document.querySelectorAll(".closeMenu");
-closeMenuClass.forEach(closeMenu);
+
+closeMenuClass.forEach(closeMenuClick);
+
 
 
 // Smooth scrolling
