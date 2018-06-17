@@ -229,8 +229,8 @@
 
 
 .bg {
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -242,34 +242,26 @@
 
 @-webkit-keyframes showcase {
   from {
-    -webkit-background: url("../../img/bg.jpg");
-    background: url("../../img/bg.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  25% {
     -webkit-background: url("../../img/bg1.jpg");
     background: url("../../img/bg1.jpg");
     background-size: cover;
     background-position: center;
   }
-
-  50% {
+  33% {
     -webkit-background: url("../../img/bg2.jpg");
     background: url("../../img/bg2.jpg");
     background-size: cover;
     background-position: center;
   }
-  75% {
-    -webkit-background: url("../../img/bg1.jpg");
-    background: url("../../img/bg1.jpg");
+  66% {
+    -webkit-background: url("../../img/bg.jpg");
+    background: url("../../img/bg.jpg");
     background-size: cover;
     background-position: center;
   }
-
   to {
-    -webkit-background: url("../../img/bg.jpg");
-    background: url("../../img/bg.jpg");
+    -webkit-background: url("../../img/bg1.jpg");
+    background: url("../../img/bg1.jpg");
     background-size: cover;
     background-position: center;
   }

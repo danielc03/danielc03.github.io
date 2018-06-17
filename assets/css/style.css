@@ -13,8 +13,11 @@ body, html {
   font-size: 17px;
   line-height: 1.6;
   /*background: linear-gradient(89deg, #1dabba 0%, #028c9b 100%);*/
-  background: url("../../img/techbg.jpg");
+  background: url("../../img/techbg1.jpg");
   overflow-x: hidden; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #top  {
@@ -24,7 +27,8 @@ body, html {
   background: transparent;
   width: 30px;
   opacity: 0.5;
-  transition: 0.3s; }
+  transition: 0.3s;
+  margin-right: 20px; }
 
 #top:hover {
   transform: scale(1.1);
@@ -78,7 +82,7 @@ a {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ddd;
+  background-color: #1dabba;
   opacity: 0.7;
   overflow-x: hidden;
   padding-top: 60px;
@@ -105,7 +109,7 @@ a {
 
 /*///////////// SHOWCASE ///////////////////*/
 #showcase {
-  background: url("../../img/bg.jpg");
+  background: url("../../img/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -124,8 +128,11 @@ a {
   height: auto; }
 
 .showcase-img {
+  /*box-shadow: 0px 5px 15px 2px #2F2F2F;*/
+  /*border-radius: 100%;*/
   width: 40%;
-  height: auto; }
+  height: auto;
+  padding: 20px; }
 
 .button {
   padding-top: 50px; }
@@ -157,7 +164,11 @@ img {
 
 /*///////////// ABOUT ///////////////////*/
 .about-me {
-  /*background: #f4f4f4;*/
+  background: #1dabba;
+  /*background: url("../../img/techbg.jpg");*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
@@ -166,7 +177,7 @@ img {
   height: 100vh; }
 
 .about-me h1 {
-  color: #646464; }
+  color: #2F2F2F; }
 
 .about-image {
   width: 80%;
@@ -174,7 +185,7 @@ img {
   align-self: center;
   transition: 0.3s;
   border: 2px solid #028c9b;
-  box-shadow: 0px 5px 15px 2px #646464;
+  box-shadow: 0px 5px 15px 2px #2F2F2F;
   background-size: cover; }
 
 .about-image:hover {
@@ -185,8 +196,8 @@ img {
   align-self: center;
   padding: 20px;
   text-align: center;
-  background: #1dabba;
-  box-shadow: 0px 5px 15px 2px #646464;
+  background: #f4f4f4;
+  box-shadow: 0px 5px 15px 2px #2F2F2F;
   border-radius: 5px; }
 
 .about-text{
@@ -201,13 +212,13 @@ img {
   text-align: center;
   padding: 30px 30px 30px 0px;
   text-transform: uppercase;
-  color: #646464;
+  color: #2F2F2F;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   /*background: #f4f4f4;*/
-  border-top: 1px solid #000;
+  /*border-top: 1px solid #000;*/
   /*border-bottom: 2px solid black;*/ }
 
 
@@ -218,22 +229,24 @@ img {
   margin: 1em;
   padding: 30px;
   border-radius: 5px;
-  /*background: #028c9b;*/
-  /*background: linear-gradient(89deg, #7ab77a 0%, #028c9b 100%);*/
-  background: #1dabba;
-  box-shadow: 0px 5px 15px 2px #646464;
-  /*color: #ddd;*/ }
+  /*background: #1dabba;*/
+  box-shadow: 0px 5px 15px 2px #2F2F2F;
+  /*background: url("../../img/techbg1.jpg");*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .portfolio-item {
   border: 2px solid #109985;
-  background: #028c9b;
+  background: #1dabba;
   /*color: #ddd;*/
   text-align: center;
   padding: 5px;
-  box-shadow: 0px 0px 15px 2px #646464;
+  box-shadow: 0px 2px 15px 2px #2F2F2F;
   transition: 0.4s; }
   
-  .portfolio-item img{
+.portfolio-item img{
   width: 350px;
   height: 200px; }
 
@@ -254,7 +267,7 @@ img {
 
 /*///////////// SKILLS ///////////////////*/
 .knowledge {
-  background: #028c9b;
+  background: #1dabba;
   /*padding: 20px;*/
   height: 100vh;
   display: flex;
@@ -274,7 +287,7 @@ img {
   /*padding: 50px;*/ }
 
 .skills-title {
-  color: #646464; }
+  color: #2F2F2F; }
 
 .skills {
   display: grid;
@@ -305,14 +318,14 @@ img {
   align-items: center; }
 
 .contact-title {
-  background: #028c9b;
+  background: #1dabba;
   padding: 30px;
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
   transition: all 2s ease-in-out;
   border-radius: 5px;
-  box-shadow: 0px 5px 15px 2px #646464; }
+  box-shadow: 0px 5px 15px 2px #2F2F2F; }
 
 .contact-title h2{
   margin-bottom: 50px;
@@ -338,7 +351,7 @@ img {
   opacity: 0.5; }
 
 .form-button {
-  background-color: #267b84;
+  background-color: #028c9b;
   color: #000;
   border: none;
   border-radius: 10px;
@@ -350,19 +363,21 @@ img {
   cursor: pointer; }
 
 .form-button:hover {
-  background: #1dabba;
+  background: #239ca8;
   color: # }
 
 /*///////////// FOOTER ///////////////////*/
 footer {
   text-align: center;
-  margin: 30px;
-  border-top: 2px solid black;
+  /*margin: 30px;*/
+  /*border-top: 2px solid black;*/
   font-weight: bold;
-  font-family: sans-serif; 
+  font-family: sans-serif;
+  background: #1dabba; 
   }
   footer p{
     font-size: 14px;
+    padding-bottom: 20px;
   }
 
 .social-icons {
