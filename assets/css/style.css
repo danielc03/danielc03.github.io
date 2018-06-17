@@ -2,13 +2,20 @@
   margin: 0;
   padding: 0; }
 
+html {
+  overflow-y: hidden;
+}
+
 body, html {
   margin: 0;
+  height: 100%;
   font-family: 'Contrail One', cursive , Serif;
   font-size: 17px;
   line-height: 1.6;
-  background: linear-gradient(89deg, #7ab77a 0%, #028c9b 100%);
-  overflow-x: hidden; }
+  /*background: linear-gradient(89deg, #1dabba 0%, #028c9b 100%);*/
+  background: url("../../img/techbg.jpg");
+  overflow-x: hidden; 
+}
 
 #top  {
   position: fixed;
@@ -137,7 +144,7 @@ a {
   cursor: pointer; }
 
 button:hover {
-  background: #109985; }
+  background: #1dabba; }
 
 .button button a {
   text-decoration: none;
@@ -145,12 +152,12 @@ button:hover {
 
 img {
   width: 100%;
-  height: auto; }
+  height: auto;}
 
 
 /*///////////// ABOUT ///////////////////*/
 .about-me {
-  background: #fff;
+  /*background: #f4f4f4;*/
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
@@ -159,7 +166,7 @@ img {
   height: 100vh; }
 
 .about-me h1 {
-  color: #ddd; }
+  color: #646464; }
 
 .about-image {
   width: 80%;
@@ -167,7 +174,7 @@ img {
   align-self: center;
   transition: 0.3s;
   border: 2px solid #028c9b;
-  box-shadow: 5px 5px 15px 2px #646464;
+  box-shadow: 0px 5px 15px 2px #646464;
   background-size: cover; }
 
 .about-image:hover {
@@ -178,27 +185,31 @@ img {
   align-self: center;
   padding: 20px;
   text-align: center;
-  background-color: #028c9b;
-  box-shadow: 5px 5px 15px 2px #646464; }
+  background: #1dabba;
+  box-shadow: 0px 5px 15px 2px #646464;
+  border-radius: 5px; }
 
-  .about-text{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+.about-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 /*///////////// PORTFOLIO ///////////////////*/
 .portfolio {
   text-align: center;
   padding: 30px 30px 30px 0px;
   text-transform: uppercase;
-  color: #ddd;
+  color: #646464;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*background: #f4f4f4;*/
+  border-top: 1px solid #000;
   /*border-bottom: 2px solid black;*/ }
+
 
 .porftolio-items {
   display: grid;
@@ -206,15 +217,20 @@ img {
   grid-gap: 2em;
   margin: 1em;
   padding: 30px;
+  border-radius: 5px;
+  /*background: #028c9b;*/
+  /*background: linear-gradient(89deg, #7ab77a 0%, #028c9b 100%);*/
+  background: #1dabba;
+  box-shadow: 0px 5px 15px 2px #646464;
   /*color: #ddd;*/ }
 
 .portfolio-item {
-  box-shadow: 0px 0px 15px 5px #ddd;
   border: 2px solid #109985;
   background: #028c9b;
   /*color: #ddd;*/
   text-align: center;
-  padding: 5spx;
+  padding: 5px;
+  box-shadow: 0px 0px 15px 2px #646464;
   transition: 0.4s; }
   
   .portfolio-item img{
@@ -258,7 +274,7 @@ img {
   /*padding: 50px;*/ }
 
 .skills-title {
-  color: #ddd; }
+  color: #646464; }
 
 .skills {
   display: grid;
@@ -289,10 +305,14 @@ img {
   align-items: center; }
 
 .contact-title {
+  background: #028c9b;
+  padding: 30px;
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
-  transition: all 2s ease-in-out; }
+  transition: all 2s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 2px #646464; }
 
 .contact-title h2{
   margin-bottom: 50px;
@@ -318,7 +338,7 @@ img {
   opacity: 0.5; }
 
 .form-button {
-  background-color: #028c9b;
+  background-color: #267b84;
   color: #000;
   border: none;
   border-radius: 10px;
@@ -330,7 +350,8 @@ img {
   cursor: pointer; }
 
 .form-button:hover {
-  background: #109985; }
+  background: #1dabba;
+  color: # }
 
 /*///////////// FOOTER ///////////////////*/
 footer {
