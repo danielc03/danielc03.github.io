@@ -149,10 +149,12 @@ a {
   font-weight: bold;
   transition: all 0.3s ease-in-out;
   /*box-shadow: 0px 0px 1px 1px #109985; */
-  cursor: pointer; }
+  cursor: pointer;
+  color: #2F2F2F; }
 
 button:hover {
-  background: #1dabba; }
+  background: #1dabba; 
+}
 
 .button button a {
   text-decoration: none;
@@ -224,9 +226,12 @@ img {
 
 
 .porftolio-items {
-  display: grid;
+/*  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
+  grid-gap: 2em;*/
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
   margin: 1em;
   padding: 30px;
   border-radius: 5px;
@@ -239,11 +244,13 @@ img {
 }
 
 .portfolio-item {
+  flex-basis: calc(16.666% - 20px);
   border: 2px solid #109985;
   background: #1dabba;
   /*color: #ddd;*/
   text-align: center;
   padding: 5px;
+  margin: 15px;
   box-shadow: 0px 2px 15px 2px #2F2F2F;
   transition: 0.4s; }
   
@@ -365,7 +372,7 @@ img {
 
 .form-button:hover {
   background: #239ca8;
-  color: # }
+ }
 
 /*///////////// FOOTER ///////////////////*/
 footer {
