@@ -538,6 +538,10 @@ footer {
     width: auto;
   }
 
+  .contact{
+    height: auto;
+  }
+
   .contact-title h2{
     font-size: 18px;
   }
