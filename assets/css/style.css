@@ -493,7 +493,7 @@ footer {
 
 /*  ***** SHOWCASE *****/
   .showcase-img {
-    width: 100%;
+    /*width: 100%;*/
     height: auto; 
   }
 
@@ -510,6 +510,10 @@ footer {
 }
 
 @media (max-width: 668px){
+
+  .showcase-img{
+    width: auto;
+  }
 
   /***** PORTFOLIO *****/
   .porftolio-items {
