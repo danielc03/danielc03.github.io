@@ -1,6 +1,7 @@
-//  Menu
-
 const sideMenu = document.querySelector("#side-menu");
+
+
+//  Menu
 
 //  Opening side menu 
 
@@ -36,3 +37,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//  review on scroll
+
+window.sr = ScrollReveal();
+sr.reveal('.navbar', {
+	duration: 2500,
+	origin: 'right',
+	distance: '300px',
+	delay: 1000
+});
+
+	
+
+
+
+
+
+
