@@ -48,8 +48,6 @@ sr.reveal('.navbar', {
 	delay: 1000
 });
 
-	
-
 
 
 

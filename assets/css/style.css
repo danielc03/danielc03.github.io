@@ -129,7 +129,7 @@ a {
   height: auto; }
 
 .showcase-img {
-  box-shadow: 0px 5px 15px 2px #2F2F2F;
+  box-shadow: 0px 10px 55px 7px #2F2F2F;
   background: url("../../img/test2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ img {
   align-self: center;
   /*transition: 0.3s;*/
   border: 2px solid #028c9b;
-  box-shadow: 0px 5px 15px 2px #2F2F2F;
+  box-shadow: 0px 5px 25px 2px #2F2F2F;
   background-size: cover; }
 
 .about-image:hover {
@@ -210,7 +210,7 @@ img {
   align-self: center;
   padding: 20px;
   text-align: center;
-  box-shadow: 0px 5px 15px 2px #2F2F2F;
+  box-shadow: 0px 5px 25px 2px #2F2F2F;
   border-radius: 5px; }
 
 .about-text{
@@ -249,7 +249,7 @@ img {
   padding: 30px;
   border-radius: 5px;
   /*background: #1dabba;*/
-  box-shadow: 0px 5px 15px 2px #2F2F2F;
+  box-shadow: 0px 10px 25px 5px #2F2F2F;
   background: url("../../img/test2.jpg");
   background-size: cover;
   background-position: center;
@@ -356,7 +356,7 @@ img {
   text-transform: uppercase;
   transition: all 2s ease-in-out;
   border-radius: 10px;
-  box-shadow: 0px 5px 15px 2px #2F2F2F; }
+  box-shadow: 0px 5px 25px 5px #2F2F2F; }
 
 .contact-title h2{
   margin-bottom: 50px;
@@ -544,6 +544,12 @@ footer {
 
   .showcase-img{
     width: auto;
+  }
+
+  .button button {
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
   }
 
   /***** PORTFOLIO *****/
