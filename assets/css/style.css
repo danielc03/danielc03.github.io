@@ -39,6 +39,10 @@ a {
   text-decoration: none;
   color: inherit; }
 
+p {
+  font-size: 18px;
+}
+
 .svg-nav {
   position: fixed;
   top: 0;
@@ -147,7 +151,6 @@ a {
 
 .button button {
   background: #028c9b;
-  color: #ddd;
   border: none;
   border-radius: 20px;
   height: 35px;
@@ -161,6 +164,7 @@ a {
 
 button:hover {
   background: #1dabba; 
+  color: #ddd ;
 }
 
 .button button a {
@@ -234,8 +238,13 @@ img {
   /*border-top: 1px solid #000;*/
   /*border-bottom: 2px solid black;*/ }
 
-#portfolio-title {
+#portfolio-main-title {
   color: #f4f4f4;
+}
+
+.portfolio-title{
+  font-size: 24px;
+  padding: 10px 0px 5px 0px;
 }
 
 .porftolio-items {
@@ -323,6 +332,10 @@ img {
   /*margin-top: 20px;*/
   /*grid-gap: 1fr;*/ }
 
+.skills h3{
+  font-size: 20px;
+}
+
 .my-skills {
   display: flex;
   flex-wrap: wrap;
@@ -394,7 +407,8 @@ img {
   cursor: pointer; }
 
 .form-button:hover {
-  background: #239ca8;
+  background: #1dabba;
+  color: #ddd;
  }
 
 /*///////////// FOOTER ///////////////////*/
@@ -451,9 +465,7 @@ footer {
   .about-me h1{
     font-size: 22px;
   }
-  .about-me h3{
-    font-size: 18px;
-  }
+
   .about-text {
     /*padding: 20px;*/
     align-self: center; 
