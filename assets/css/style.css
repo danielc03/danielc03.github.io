@@ -325,9 +325,12 @@ img {
   color: #2F2F2F; }
 
 .skills {
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(4, 2fr);
-  padding: 30px 10px;
+  padding: 30px 10px;*/
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
   /*align-self: center;*/
   /*margin-top: 20px;*/
   /*grid-gap: 1fr;*/ }
@@ -342,7 +345,7 @@ img {
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 10px; }
+  padding: 35px; }
 
 .my-skills svg {
   width: 100px;
