@@ -420,10 +420,10 @@ footer {
   font-family: sans-serif;
   background: #1dabba; 
   }
-  footer p{
-    font-size: 14px;
-    padding-bottom: 20px;
-  }
+footer p{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
 
 .social-icons {
   display: flex;
@@ -480,9 +480,9 @@ footer {
   }
 
   .portfolio-item img{
-  width: 200px;
-  height: 150px; 
-}
+    width: 200px;
+    height: 150px; 
+  }
   .portfolio h2{
     font-size: 18px;
   }
