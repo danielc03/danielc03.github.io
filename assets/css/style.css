@@ -617,7 +617,7 @@ footer p{
   }
 }
 
-@media, (max-height: 550px) {
+@media (max-height: 550px) {
 
   /****** SHOWCASE *****/
   .showcase-img {
