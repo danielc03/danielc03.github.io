@@ -622,4 +622,29 @@ footer p{
     width: 30%;
     height: auto; 
   }
+  .contact{
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .contact-title h2{
+    font-size: 12px;
+  }
+
+  .form-control{
+    width: auto;
+    height: 50%;
+  }
+
+  .form-button {
+    height: 15px;
+    width: 80px;
+    font-size: 10px;
+  }
+  ::placeholder {
+    font-size: 10px; }
+
+  .ft-logos {
+    width: 2%; 
+  } 
 }
